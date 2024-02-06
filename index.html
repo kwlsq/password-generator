@@ -1,0 +1,26 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<main>
+		<h1 class="header">Generate a <span class="primary-font-color"><br/>random password</span></h1>
+		<p class="supporting-text">Never use an insecure password again.</p>
+		<div class="generate-password-component">
+			<input type="number" min="10" max="20" value="15" class="password-length-input" oninput="validateQuantity()" />
+			<button onclick="generatePassword()" class="btn-generate">Generate passwords</button>
+			<input checked oninput="validateSymbol()" type="checkbox" class="toggle-symbol">
+			<label for="toggle-symbol">Symbols?</label>
+		</div>
+		<hr/>
+		<div class="passwords-wrapper">
+			<p onclick="copyOnClick1()" class="password-box-1"></p>
+			<p onclick="copyOnClick2()" class="password-box-2"></p>
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+
+</html>

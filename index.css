@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    background: #1C1C1C;
+    color: white;
+    font-family: Inter;
+}
+
+main{
+    margin: 15% auto;
+    width: 550px;
+    padding: 100px 40px;
+    background-color: #1F2937;
+}
+
+.header{
+    margin-bottom: 0;
+}
+
+.supporting-text{
+    margin-top: 1%;
+    line-height: 28px;
+    font-weight:400;
+    color: #D5D4D8;
+}
+
+.primary-font-color{
+    color: #4ADF86;
+}
+
+.label{
+    font-size: 10px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+}
+
+.generate-password-component{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;   
+    column-gap: 3%;
+}
+
+.toggle-symbol{
+    height: 25px;
+    width: 25px;
+}
+
+.btn-generate{
+    padding: 8px 16px;
+    border-radius: 6px;
+    background-color: #10B981;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    outline-style: none;
+    outline: none;
+}
+
+button:focus, button:active, input:focus {
+    outline: none; 
+}
+
+.passwords-wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2em;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #2F3E53;
+  margin: 2.25em 0;
+  padding: 0;
+}
+
+.password-length-input{
+    height: 36px;
+    width: 50px;
+    border-radius: 6px;
+    color: #1F2937;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    outline-style: none;
+    text-align: center;
+}
+
+.password-box-1,.password-box-2{
+    padding: 0px;
+    border-radius: 6px;
+    width: 45%;
+    min-height: 40px;
+    background-color: #273549;
+    color: #55F991;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto; /* Try adding this */
+}
