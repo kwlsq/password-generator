@@ -23,16 +23,16 @@ function validateSymbol() {
 
 function generatePassword() {
     let passwordLengthInput = document.querySelector('.password-length-input').value;
-
     let password1 = "";
     let password2 = "";
     for (let i = 0; i < passwordLengthInput; i++) {
         password1 += randomizedCharacter()
         password2 += randomizedCharacter()
     }
-    passwordBox1.textContent = password1;
-    passwordBox2.textContent = password2;
-    console.log(passwordLengthInput)
+    console.log(password1)
+    console.log(password2)
+    document.getElementById('password1').textContent = password1;
+    document.getElementById('password2').textContent = password2;
 }
 
 function randomizedCharacter() {
